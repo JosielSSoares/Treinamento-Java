@@ -22,13 +22,17 @@ public class InputHelper {
             try {
                 System.out.print(mensagem);
                 valor = Integer.parseInt(scanner.nextLine());
-                return valor;
+                if (valor <= 0) {
+                    System.out.println("Valor deve ser maior que zero.");
+                } else {
+                    return valor;
+                }
             } catch (NumberFormatException e) {
                 System.out.println("Entrada inválida! Por favor, insira um número inteiro válido.");
             }
         }
     }
-
+    
     // Método para ler um double com validação
     public double getDouble(String mensagem) {
         double valor;
@@ -36,7 +40,11 @@ public class InputHelper {
             try {
                 System.out.print(mensagem);
                 valor = Double.parseDouble(scanner.nextLine().replace(",", "."));
-                return valor;
+                if (valor <= 0) {
+                    System.out.println("Valor deve ser maior que zero.");
+                } else {
+                    return valor;
+                }
             } catch (NumberFormatException e) {
                 System.out.println("Entrada inválida! Por favor, insira um número decimal válido (ex.: 1,75).");
             }
