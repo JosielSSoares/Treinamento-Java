@@ -16,7 +16,7 @@ public class InputHelper {
     }
 
     // Método para ler um int com validação
-    public int getInt(String mensagem) {
+    public int getByte(String mensagem) {
         int valor;
         while (true) {
             try {

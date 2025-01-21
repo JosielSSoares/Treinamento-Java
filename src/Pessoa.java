@@ -1,11 +1,10 @@
 
-
-
 public class Pessoa {
     private String nome;
-    private int idade;
+    private byte idade;
     private double altura;
     private double peso;
+    private boolean atividadeFisica;
 
     public String getNome(){
         return nome;
@@ -22,11 +21,11 @@ public class Pessoa {
         }
     }
 
-    public int getIdade(){
+    public byte getIdade(){
         return idade;
     }
 
-    public void setIdade(int idade){
+    public void setIdade(byte idade){
         
         if (idade > 0) {
             this.idade = idade;
