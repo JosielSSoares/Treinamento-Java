@@ -6,7 +6,8 @@ public class InputHelper {
 
     public InputHelper() {
         // Scanner configurado para o Locale brasileiro
-        this.scanner = new Scanner(System.in).useLocale(new Locale("pt", "BR"));
+        this.scanner = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
     }
 
     // Método para ler uma String
