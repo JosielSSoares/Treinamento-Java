@@ -13,8 +13,8 @@ public class Main {
         System.out.println("\nDados da Pessoa:");
         System.out.println("Nome: " + pessoa1.getNome());
         System.out.println("Idade: " + pessoa1.getIdade());
-        System.out.println("Altura: " + pessoa1.getAltura());
-        System.out.println("Peso: " + pessoa1.getPeso());
+        System.out.printf("Altura: %.2f",pessoa1.getAltura());
+        System.out.println("\nPeso: " + pessoa1.getPeso());
         
         // System.out.println("Nome: " + pessoa1.getNome() + "\nIdade: " + pessoa1.getIdade() + "\nAltura: " + pessoa1.getAltura() + "\nPeso: " + pessoa1.getPeso());
 
